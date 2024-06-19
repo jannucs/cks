@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: test-network-policy
+  namespace: default
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+#git clone https://github.com/jannucs/cks.git
+#alias 'ga=git add .'
+#alias 'gc=git commit -m "np"'
+#alias 'gp=git push origin main'
+#alias 'gaa=ga && gc && gp'
+#git config --global user.email "vamsics2@gmail.com"
+#git config --global user.name "Vamsi krishna Jannu"
