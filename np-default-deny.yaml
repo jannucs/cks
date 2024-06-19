@@ -1,13 +1,13 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: test-network-policy
-  namespace: default
+  name: default-deny-all
 spec:
   podSelector: {}
   policyTypes:
   - Ingress
   - Egress
+
 #git clone https://github.com/jannucs/cks.git
 #alias 'ga=git add .'
 #alias 'gc=git commit -m "np"'
