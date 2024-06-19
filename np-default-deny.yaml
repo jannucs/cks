@@ -1,29 +1,3 @@
-apiVersion: v1
-items:
-- apiVersion: v1
-  kind: Pod
-  metadata:
-    labels:
-      pod: pod-1
-    name: pod-1
-    namespace: default
-  spec:
-    containers:
-    - image: nginx
-      name: pod-1
-- apiVersion: v1
-  kind: Pod
-  metadata:
-    labels:
-      pod: pod-2
-    name: pod-2
-    namespace: default
-  spec:
-    containers:
-    - image: nginx
-      name: pod-2
-kind: List
----
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -39,9 +13,3 @@ spec:
   - Egress
 
 #git clone https://github.com/jannucs/cks.git
-#alias 'ga=git add .'
-#alias 'gc=git commit -m "np"'
-#alias 'gp=git push origin main'
-#alias 'gaa=ga && gc && gp'
-#git config --global user.email "vamsics2@gmail.com"
-#git config --global user.name "Vamsi krishna Jannu"
